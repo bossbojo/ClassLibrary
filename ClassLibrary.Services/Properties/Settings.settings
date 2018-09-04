@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ClassLibrary.Services.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PathPrivate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C://SSTKEY//service.key</Value>
+    </Setting>
+    <Setting Name="PathPublic" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C://SSTKEY//service.pub</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
