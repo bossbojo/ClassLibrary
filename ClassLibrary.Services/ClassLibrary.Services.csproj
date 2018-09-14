@@ -82,9 +82,6 @@
     <Compile Include="Email\ValidEmail.cs" />
     <Compile Include="GenerateCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Security\App_Hash.cs" />
-    <Compile Include="Security\App_Random.cs" />
-    <Compile Include="Security\App_Securities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
