@@ -239,7 +239,34 @@ namespace ClassLibrary.Pagination
                 limit_page = 0
             });
         }
-
+        public object queryNonPaginationJSON(string tableORview_name, string sortByColumn, string sort_type)
+        {
+            var request = GetParamsRequest();
+            return queryPaginationAndFilterYourWhereJSONnonPagination(new Parame
+            {
+                table_name = tableORview_name,
+                search_text = request.filter,
+                page = 0,
+                limit_page = 0,
+                sortby = sortByColumn,
+                sort_type = sort_type
+            });
+        }
+        public object queryNonPaginationJSON(string tableORview_name, ConditionString where, string sortByColumn, string sort_type)
+        {
+            var request = GetParamsRequest();
+            return queryPaginationAndFilterYourWhereJSONnonPagination(new Parame
+            {
+                table_name = tableORview_name,
+                yourwhere = where.EXEC,
+                key_where = where.EXEC_KEY,
+                search_text = request.filter,
+                page = 0,
+                limit_page = 0,
+                sortby = sortByColumn,
+                sort_type = sort_type
+            });
+        }
 
         //function private
         //normal
