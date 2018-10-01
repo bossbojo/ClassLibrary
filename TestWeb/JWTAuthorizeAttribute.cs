@@ -9,6 +9,7 @@ namespace TestWeb
 {
     public class JWTAuthorizeAttribute : AuthorizeAttribute
     {
+        //authen
         public override void OnAuthorization(HttpActionContext actionContext)
         {
             string token = HttpContext.Current.Request.Headers["Authorization"];
@@ -22,7 +23,7 @@ namespace TestWeb
                 }
               //throw new System.Security.Authentication.AuthenticationException("Can not access this page.");
             }
-            base.OnAuthorization(actionContext);
+            base.OnAuthorization(actionContext); 
         }
     }
 }
